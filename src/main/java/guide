@@ -1,0 +1,408 @@
+5:30 Trotar y abdominales.
+7:00 a 5:30 Trabajo.
+30 Hora de ingles.
+1 Hora de Programacion.
+1 hora de analisis tecnico.
+
+012636981
+981358713
+
+jiron tacna 643 magdalena del mar - DAEWO
+
+Java
+1.Las Clases deben empezar con letras mayusculas al igual que las palabras siguientes ejemplo: AddCustomer
+2.Java es Key sensitive osea respetar minusculas y mayusculas.
+3.Tipos de dato Java:
+Primitivo: Enteros y Flotantes.
+Referenciados: Clases, Interfaces y Arreglos.
+4.Metodo main permite ejecutar nuestro programa.
+5.Declaracion de Variables:
+Se recomienda las variables se inicia con minuscula y luego mayusculas
+Notacion de Camello.
+int miVariableEntera
+Todas las lineas en java terminan en (;)
+6.Atajo netbeans sout+tab y tambien soutv
+7.Declaracion de un dato string es practicamente una clase String.
+ctlr+click me lleva a donde se define la variable
+ctlr+espacio permite completar nombre variable
+String miVariableCadena = "Saludos";
+8.Palabra reservada VAR se define dependiendo del tipo de literal ya sea Numero o String.
+VAR HACE INFERENCIA DE TIPOS EN JAVA
+Si estas fuera de un metodo ya no podras utilizar var
+Reglas para definir el nombre de una variable:
+-No se pueden utilizar  numero al inicio de las variables cuando estas sean declaradas
+-Se puede definir el inicio de una variable con _ o $ ejemplo $mivar o _mivar como tambien los acentos ámivar pero no se recomiendo utilizar
+-No permite caracteres especiales tipo #MIVAR
+-Se recomiendo empezar las variables con minusculas  y luego mayusculas ejemplo miVariableMiza
+quede en clase 12 concatenacion de variables.
+
+concatenacion se marca la accion a realizar de izquierda a derecha ejeplo si es string el primero entonces el java concatenara los siguientes asi sean numeros, vale destacar que se puede definir prioridad con parentisis
+
+caracteres especiales: 
+\n (salto de linea)
+\t (imprime un tabulador)
+\b (retroceso elimina espacio recorre un caracter hacia atras)
+\' (comilla simple imprimir  )
+\" (comilla doble imprimir)
+leccion 14 clase scanner
+permite leer informacion de la consola
+Scanner consola = new Scanner(System.in);
+se debe importar el paquete
+import java.util.Scanner
+metodo a utilizar: 
+var usuario = consola.nextLine()
+dicho metodo permite leer la linea entera
+Tipos primitivos que almancenan enteros sin punto flotante
+comentarios // o /*  */
+Tipo de entero
+byte - short - int - long
+byte numeroByte = 129;
+puede forzar la conversion del tipo con los parentesis
+byte numeroByte = (byte)129;
+short numeroShort= 10;
+si el tipo int supera su maximo se debe convertir a tipo long usando L al final
+int numeroInt = (int)2147483648L;
+se recomienda siempre usar el tipo int de igual forma existe el long por si lo necesitan.
+long numeroLong =10;
+Tipo flotante
+float y double
+tambien estan VAR Y CHAR
+a la par que los boolean puede ser true o false
+Conversiones de tipos
+var edad = "20";
+string a numero}
+var edad = Integer.parseInt("20");
+Numero a string
+var edadTexto = String.valueOf(10)
+oobtener solo caracter
+caracter = consola.nexLine().charAt(o) <-- imprime solo el primer caracter por q es lo q indica por el indice 
+Operadores aritmetico
+Foto en el tlf
+operador de asignacion
+a = 5;
+operador de composicion
+a += 1;
+a=6 tambien existen multi *= division /= producto %=
+operador unario
+var a = 3;
+var b = a-
+es igual -3 solo invierte el signo por la asignacion
+inversion de boleano
+var c = true;
+d = !c;
+seria igual a false
+incremento 
+var e = 3;
+var f = ++e; primero increnments la variable y despues asigna el valor
+ post incremento
+var g = 5;
+var h = g++;primero se utilizar el valor de la variable y luego se incrementa 
+los mismo sirve para los decrementos
+Operadores de igualdad 
+var c = (a == b);
+diferente
+var c = (a != b);
+comparar strings
+cadena="perro"
+cadena2="gato"
+var f = cadena.equals(cadena2)
+operadores racionales consulta si es mayo o igual.
+a > b
+a >= b
+Operadores Condiciales
+ AND && Y OR ||
+
+Operador ternario
+( 3 > 4 ) ? "VERDADERO" : "FALSO"
+
+PRECEDENCIA DE OPERADORES
+
+CONDICIONAL IF 
+comprobacion tipo bolean
+if (condicion) {
+System.out.println("Condicion true")
+} else {
+System.out.println("Condicion false")
+}
+
+Else if
+
+var numero = 2
+var numeroTexto= "Numero desconocido"
+
+if ( numero == 1 ) {
+   numeroTexto = "numero1"
+} else if ( numero == 2 ) {
+   numeroTexto = "numero2"
+} else {
+  numeroTexto = "Numero no encontrado"
+}
+
+Swicht
+comprobacion tipo numero o string
+el else aqui es default
+
+var numero = 2;
+numeroTexto= "Texto"
+
+switch(numero){
+       case 1:
+       numeroTexto= "Texto 1";
+       break;
+       case 2:
+       numeroTexto= "Texto 2";
+       break;
+       default:
+         numeroTexto= "Texto No Encontrado";
+}
+
+Ciclo While
+
+var contador = 0;
+
+while (contador < 3 ) {
+  contador++;
+}
+
+Ciclo DO While
+(Diferencia es invertido primero el bloque de codigo y luego condicion)
+var contador = 0;
+do {
+contador++;
+} while ( contador < 3 );
+
+se puede usar un WATCH para sabe que pasa con la variable contador
+
+Ciclo FOR
+en la variables de contador en for son locales en el mismo, despues mueren
+primero se incrementa la variable y luego se evalua la condicion
+
+for( var contador = 0 ; contador < 3  ; contador++){
+//codigo
+}
+
+break;
+continue;// ir a la siguiente iteracion
+
+etiquetas
+es tipo de programacion GO TO
+inicio:// etiqueta
+         continue inicio;// ir a la linea de codigo de la equeta
+lo mismo para el break puede utilizarce dentro de for aninados
+
+Clases
+
+package clases;
+
+public class Persona {
+//Atributos de la Clase
+String nombre;
+String Apellido;
+
+//Metodos
+
+public void desplegarInformacion() {
+System.out.println("Nombre: " +  nombre);
+
+}
+
+}
+
+Creando objeto de la clase persona
+
+package clases;
+
+public class PruebaPersona {
+
+public static void main(String [] args) {
+
+Persona persona1;
+persona1 = new Persona():
+persona1.nombre= "Pedro"
+persona1.desplegarInformacion();
+}
+}
+
+Creacion de Metodos en Java
+
+package operaciones;
+public class Aritmetica {
+//Atributos de la clase
+int a;
+int b;
+
+//Metodo
+
+public void sumar(){
+   int resultado =   a + b;
+System.out.println("Resultado " +  resultado);
+}
+
+public int sumarConRetorno(){
+int resultado =   a + b;
+return resultado;
+}
+}
+
+Utilizacion del metodo creado
+
+package operaciones;
+
+public class PruebaAritmetica {
+
+public static void main(String [] args) {
+
+Arimetica aritmetica1 = new Aritmetica():
+aritmetica1.a= 3;
+aritmetica1.a= 2;
+aritmetica1.sumar();
+int resultado = aritmetica1.sumarConRetorno();
+System.out.println("Resultado desde la prueba" +  resultado);
+}
+}
+
+Ejecucion paso a paso
+
+Punto de quiebre y step into 
+
+Parametros en metodos
+
+Validar en proyecto java clases aritmetica 
+
+Operador This
+
+apunta al objeto que esta ejecutando en ese momento
+
+dentro de metodos staticos no se puede usar la palabra(operador) this
+
+
+Constructores y sobre carga de los mismo
+
+*Se llama como la clase
+*No tiene necesida de llevar ningun tipo de dato ejemplo void
+no esta permitido utilizar var en creacion de metodos (argumentosajaja)
+
+Alcance Variables
+
+Atributos de nuestra clase no pueden utilizar var y tampoco dentro de los argumentos de un metodo.
+
+variable locales de un metodo no pueden ser utilizadas en otro debido a que se destruyen
+
+MEMORIA STACK Y HEAP EN JAVA
+
+MEMORIA STACK
+Variables locales
+
+MEMORIA HEAP
+Variables tipo Object
+
+System.gc(); // garbage colector
+
+PASO POR VALOR EN JAVA
+TIPOS PRIMITIVOS
+
+SOLO SE PASA UN COPIA DE NUESTRA VARIABLE AL METODO QUE VAMOS A LLAMAR 
+
+PASO POR VALOR  POR REFERENCIA
+
+las variables con objectos solo se pasan la referencia entre los metodos
+
+ 
+RETURN
+-se puede pasar variable o objeto
+
+-puede tener varios return pero considerar que sale de la funcion dependiendo del lugar en el q este en el return
+
+
+THIS
+
+paquetes siempre se crean con minusculas
+
+notas: solo puede existir una clase public en un archivo
+las otras clases creadas solo se podran utilizar en el mismo paquete.
+
+la palabra sola this hace referencia al objeto en uso
+
+la palabra super hace llamada al constructor de la clase padre de la clase en ejecucion
+
+Encapsulamiento en JAVA
+
+Metodos de acceso para manejar los datos y funciones de las clases
+es la forma correcta
+con modificadores de acceso a las mismas PRIVATE
+
+nota: puedes importar todas la clases de un paquete usando esto:import dominio.*
+para el caso de ejemplo en curso 
+
+
+Contexto Estatico y Contexto dinamico
+
+Cruso SPRING 
+9.Maven tecnologia para administrar dependencias de java.(Contenedor de librerias)
+10.puedes crear un proyecto Spring en start.spring.io
+11.Spring agiliza el desarrollo de aplicaciones Java.
+12.Spring Boot agrega y Configura las dependencias de Spring de forma rapida y sencilla, Spring es solo el contenedor
+13.VS Spring Initializr: CREAR PROYECTO SPRING
+Archivo Pom estrutura basica de proyecto maven
+Group id:identificador del grupo de proyectos
+artifactid: identificador del proyecto 
+package: nombre de paquete en java
+servlet servidor de aplicaciones
+Plugin:son la parte build extiende las funcionalidades de maven
+14.This solo funciona en la clase en ejecucion y se usa para definir propiedades y metodos en una clase
+
+la clases de spring solo se ven si estan dentro del mismo paquete o subpaquete
+API
+entity: van a definir el objetvo de la bd - relacioens
+repository:clase maestra  crud repository - metodos findby id - delete etc etc.
+service:
+tiene una interfaz y una implementacion de esa interfaz - patron de desarrollo
+impl: todo el flujo para guardar osea todas las operaciones y luego se muestra con el controller.
+
+
+WSDL = web service description language trae la documentacion del web services
+
+XSD
+
+botom up
+botom down
+
+complex type objetos de respuesta o envio
+
+operaciones se usan los element
+
+visual code 
+
+multiple modificacion CTLR +D
+coopiaa linea alt + shif + direccional flecha
+crlt +p buscar en el proyecto 
+crlt + l seleccion linea entera
+alt + direccional flecha move linea de lugar 
+crlt  + shift +  k elimina linera entera
+
+ANOTACIONES GIT
+
+https://es.stackoverflow.com/questions/1458/regresar-un-repositorio-a-un-commit-especifico
+
+…or create a new repository on the command line
+echo "# devshells" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:mizaelmorales/devshells.git
+git push -u origin main
+…or push an existing repository from the command line
+git remote add origin git@github.com:mizaelmorales/devshells.git
+git branch -M main
+git push -u origin main
+
+
+git reset 
+git remote -v
+git pull --rebase
+git init
+git add -A
+git commit -m "Add your commit"
+git branch -M main
+git push origin main --force
