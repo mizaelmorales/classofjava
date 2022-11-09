@@ -1,7 +1,5 @@
 package caja;
 
-import javax.print.event.PrintEvent;
-
 public class cajaWork {
     public static void main(String[] args) {
         Caja cajaObject1 = new Caja();
