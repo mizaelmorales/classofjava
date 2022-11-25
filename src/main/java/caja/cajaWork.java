@@ -2,7 +2,6 @@ package caja;
 
 public class cajaWork {
     public static void main(String[] args) {
-        Caja cajaObject1 = new Caja();
         
         Caja cajaObject2 = new Caja(3,2,6);
 

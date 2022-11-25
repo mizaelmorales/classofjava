@@ -336,8 +336,38 @@ para el caso de ejemplo en curso
 
 
 Contexto Estatico y Contexto dinamico
+los atributos y metodos estaticos se comparten entre las clases y no puede acceder al contecto dinamico pero 
+el contexto dinamico si puede acceder al statico
+metodo statico se puede compartir entre clases
+un metodo estatico solo puede llamar a otro metodo statico
+en un metodo estatico no se puede usar la palabra this
 
-Cruso SPRING 
+Herencia
+permite heredar la los metodos y atributos de una clases a otra.
+protected necesario para la herencia de clases.
+
+SobreCarga de constructores
+Se trata del uso y llamadas de constructores en una misma clase
+se usa la palabra this, mas debes recordar que puedes usar super tambien pero no los 2 al mismo tiempo
+this();
+los contructores implicitamente recorren los contructores padres.
+
+sobre carga de metodos
+permite la llamada del mismo metodo varias veces diferenciandose por el nombre de variable y cantidad de argumentos
+
+tambien existe import static para metodos 
+ estaticos y variables
+
+tambien existe nombre completamente calificado que lo q trata es toda la ruta yu funcion
+mx.com.utileria.imprimir("Hola");
+
+PALABRA FINAL
+EN VARIABLES EVITA CAMBIAR EL VALOR QUE ALMACENA UNA VARIABLE OSEA CREA UNA CONSTANTE MI CHAMO
+EN METODOS  EVITA QUE SE MODIFIQUE LA DEFINICION DE UN METODO DESDE UNA SUBCLASE
+EN CLASES EVITA QUE SE CREE UNA SUBCLASE
+
+
+ Cruso SPRING 
 9.Maven tecnologia para administrar dependencias de java.(Contenedor de librerias)
 10.puedes crear un proyecto Spring en start.spring.io
 11.Spring agiliza el desarrollo de aplicaciones Java.

@@ -58,5 +58,9 @@ public class basicjava {
 
        var test = Names.get(1);
        System.out.println(test);
+
+       String frutas[] = {"manzana","pera"};
+
+       
     }
 }
